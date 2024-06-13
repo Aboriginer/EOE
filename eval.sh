@@ -5,13 +5,13 @@ export CUDA_VISIBLE_DEVICES=0
 # task='far'
 # L=500
 
-datasets=('ImageNet10' 'ImageNet20' 'ImageNet')
-task='near'
-L=3
+# datasets=('ImageNet10' 'ImageNet20' 'ImageNet')
+# task='near'
+# L=3
 
-# datasets=('cub100_ID' 'car98_ID', 'food50_ID' 'pet18_ID')
-# task='fine_grained'
-# L=500
+datasets=('cub100_ID' 'car98_ID' 'food50_ID' 'pet18_ID')
+task='fine_grained'
+L=500
 
 for dataset in "${datasets[@]}"
 do
