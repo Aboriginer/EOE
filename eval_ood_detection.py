@@ -65,7 +65,7 @@ def main():
 def process_args():
     parser = argparse.ArgumentParser(description='Leverage LLMs for OOD Detection', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--in_dataset', default='bird200', type=str, choices=ALL_ID_DATASET, help='in-distribution dataset')
-    parser.add_argument('--root_dir', default="/data2/chentao/code/DOS/datasets", type=str, help='root dir of datasets')
+    parser.add_argument('--root_dir', default="datasets", type=str, help='root dir of datasets')
     # prompt pipeline
     parser.add_argument('--ensemble', action='store_true', default=False, help='CLIP text prompt engineering')
     parser.add_argument('--L', type=int, default=500, help='the length of envisioned OOD class labels, for far/fine-grained: L=500, for near: L=3')
