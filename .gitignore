@@ -1,0 +1,11 @@
+# vscode debug
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+.env
+# ignore data and output directory
+datasets/
+results*/
+plot/
