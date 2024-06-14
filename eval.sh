@@ -17,7 +17,7 @@ for dataset in "${datasets[@]}"
 do
   for i in {0..3}; do
     echo "Running experiment with dataset=${dataset}, iteration=${i}, model=CLIP"
-    python eval_ood_detection.py \
+    python3 eval_ood_detection.py \
       --llm_model 'gpt-3.5-turbo-16k' \
       --ood_task "${task}" \
       --score_ablation "EOE" \
@@ -37,19 +37,19 @@ done
 for dataset in "${datasets[@]}"
 do
     echo "Running experiment with dataset=${dataset}"
-    python eval_ood_detection.py \
+    python3 eval_ood_detection.py \
     --ood_task "${task}"  \
     --in_dataset "${dataset}" \
     --score 'MCM' 
 
     echo "Running experiment with dataset=${dataset}"
-    python eval_ood_detection.py \
+    python3 eval_ood_detection.py \
     --ood_task "${task}"  \
     --in_dataset "${dataset}" \
     --score 'max-logit' 
 
     echo "Running experiment with dataset=${dataset}"
-    python eval_ood_detection.py \
+    python3 eval_ood_detection.py \
     --ood_task "${task}"  \
     --in_dataset "${dataset}" \
     --score 'energy' \

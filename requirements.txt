@@ -1,5 +1,14 @@
-# TODO: We will add requirements in the next days
 absl-py==1.4.0
 torch==1.13.1
 torchvision==0.14.1
 openai==0.28.0
+numpy==1.23.5
+scipy==1.10.1
+seaborn==0.12.2
+transformers==4.32.1
+timm==0.9.12
+scikit-learn==1.2.2
+fastapi-poe==0.0.44
+fastapi==0.110.0
+python-dotenv==1.0.1
+
