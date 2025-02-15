@@ -12,6 +12,9 @@ Official code for the paper "Envisioning Outlier Exposure by Large Language Mode
 ### Abstract
 Detecting out-of-distribution (OOD) samples is essential when deploying machine learning models in open-world scenarios. Zero-shot OOD detection, requiring no training on in-distribution (ID) data, has been possible with the advent of vision-language models like CLIP. Existing methods build a text-based classifier with only closed-set labels. However, this largely restricts the inherent capability of CLIP to recognize samples from large and open label space. In this paper, we propose to tackle this constraint by leveraging the expert knowledge and reasoning capability of large language models (LLM) to Envision potential Outlier Exposure, termed EOE, without access to any actual OOD data. Owing to better adaptation to open-world scenarios, EOE can be generalized to different tasks, including far, near, and fine-grained OOD detection. Technically, we design (1) LLM prompts based on visual similarity to generate potential outlier class labels specialized for OOD detection, as well as (2) a new score function based on potential outlier penalty to distinguish hard OOD samples effectively. Empirically, EOE achieves state-of-the-art performance across different OOD tasks and can be effectively scaled to the ImageNet-1K dataset.
 
+### Adv
+🔥🔥🔥 Checkout our ICLR'25 Work [ZS-NTTA](https://github.com/Aboriginer/ZS-NTTA?tab=readme-ov-file), which introduces Zero-Shot Noisy TTA (ZS-NTTA) setting, focusing on adapting the model to target data with noisy samples during test-time in a zero-shot manner.
+
 ## Setup
 ### Dependencies
 ```bash
